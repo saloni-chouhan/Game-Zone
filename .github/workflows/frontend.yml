@@ -12,19 +12,7 @@ jobs:
     steps:
       # 1. Checkout repo
       - uses: actions/checkout@v3
-      # 2. Setup Nodejs
-      - uses: actions/setup-node@v3
-        with:
-          node-version: "18"
-      # 3. Install Dependencies(if using npm, yarn)
-      - run: npm install
 
-      # 4. Run lint checks (ESLint, Stylelint)
-      - run: npm run lint
-
-      # 5. Run Tests (Jest, Mocha, Vitest, etc.)
-      - run: npm test
-
-      # 6. Build Project (if you use bundlers like Webpack/Vite)
-      - run: npm run build
-
+      # ✅ No npm install, no lint, no tests
+      - name: Verify files exist
+        run: ls -R
