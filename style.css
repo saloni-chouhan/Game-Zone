@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  background-color: #081b31;
+  color: white;
+  height: 5rem;
+  line-height: 5rem;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+.choice {
+  width: 165px;
+  height: 165px;
+  padding: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.choice:hover {
+  cursor: pointer;
+  opacity: 0.7;
+  background-color: #e4d420 !important;
+}
+
+#rock,
+#paper,
+#scissors {
+  border-radius: 50%;
+}
+
+#rock {
+  background-color: pink;
+}
+
+#paper {
+  background-color: rgb(228, 108, 228);
+}
+
+#scissors {
+  background-color: rgb(131, 131, 232);
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Score Board */
+
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  gap: 5rem;
+}
+
+#user-score,
+#comp-score {
+  font-size: 4rem;
+}
+
+/* Message Container */
+.msg-container {
+  margin-top: 5rem;
+}
+
+#msg {
+  background-color: #081b31;
+  color: #fff;
+  font-size: 2rem;
+  color: #FFF;
+  display: inline;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.rock-paper-game {
+  padding: 20px;
+  /* border: 1px solid black; */
+  width: 350px;
+  height: 350px;
+  margin: 10px;
+}
+
+a img {
+  width: 350px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* Roll a Dice */
+
+button {
+  margin-top: 35px;
+  padding: 10px 25px;
+  background-color: #081b31;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #164171;
+}
+
+.val-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.content {
+  margin-right: 10px;
+}
+
+/* styling the Tic Tac Toe */
+
+/* color palette for tic tac toe */
+
+/* 
+  8D3B72
+  8A7090
+  89A7A7
+  72E1D1
+  B5D8CC
+*/
+
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+.tic-tac-body {
+  background-color: #8A7090;
+}
+
+.tic-tac-game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+button.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: none;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.7);
+  font-size: 8vmin;
+  background-color: #8D3B72;
+  color: #D34F73;
+}
+
+#reset-btn,
+#new-btn {
+  padding: 1rem;
+  font-size: 1.25rem;
+  background-color: #89A7A7;
+  color: #B5D8CC;
+  border: none;
+  border-radius: 1rem;
+}
+
+#win-msg {
+  color: #D34F73;
+  font-size: 8vmin;
+}
+
+.win-msg-container {
+  height: 90vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hide {
+  display: none;
+}
+
+button.playerX {
+  color: #72E1D1;
+}
+
+button.playerO {
+  color: #B5D8CC;
+}
+
+#win-msg.draw {
+  color: #8D3B72;
+}
